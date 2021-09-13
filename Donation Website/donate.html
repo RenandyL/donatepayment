@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+
+    <!--NavBar Section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/index.html" id="navbar__logo">Save the Wildlife</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links" 
+                        id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links" 
+                        id="About-page">About Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#Donate" class="navbar__links" 
+                        id="Donate">Donate</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="donate-container">
+        <h1>Confirm Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>First Name</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+                </div>
+                <div class="last-name">
+                <h3> Last Name</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+                </div>
+        </div>
+
+        <div class="email">
+            <div class="owner">
+                <h3>Email</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+           
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+                
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+
+            
+        
+        
+        <div class="third-row">
+            
+            <h3>Exp. Date</h3>
+            
+            <div class="selection">
+                <div class="date">
+                        <select name="months" id="months">
+                            <option value="month">Month</option>
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                          </select>
+                          <select name="years" id="years">
+                            <option value="year">Year</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                        </select>
+                </div>
+                   <div id="my_form">
+                   
+            
+            <button id="nextStep">Confirm</button>
+          </div>
+          
+          <div id="thank_you" style="display: none;">
+            <a href="/index.html" >
+            <button type="submit">Thanks for donating!</button></a>
+          </div>
+          
+          <script>
+            var nextStep = document.querySelector('#nextStep');
+          
+            nextStep.addEventListener('click', function (e) {
+              e.preventDefault();
+              // Hide first view
+              document.getElementById('my_form').style.display = 'none';
+          
+              // Show thank you message element
+              document.getElementById('thank_you').style.display = 'block';
+            });
+          </script>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
